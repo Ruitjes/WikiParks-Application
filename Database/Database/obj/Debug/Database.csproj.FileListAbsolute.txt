@@ -11,3 +11,14 @@ C:\Users\stanr\Desktop\Visualstuido\Database\Database\bin\Debug\MySql.Data.dll
 C:\Users\stanr\Desktop\Wikiparks-Applicaiton\Wikiparks-Application\Database\Database\bin\Debug\Database.exe.config
 C:\Users\stanr\Desktop\Wikiparks-Applicaiton\Wikiparks-Application\Database\Database\obj\Debug\Database.exe
 C:\Users\stanr\Desktop\Wikiparks-Applicaiton\Wikiparks-Application\Database\Database\obj\Debug\Database.pdb
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\Database.exe.config
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.exe
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.pdb
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.csprojResolveAssemblyReference.cache
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.Form1.resources
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.Login.resources
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.Properties.Resources.resources
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.csproj.GenerateResource.Cache
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\Database.exe
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\Database.pdb
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\MySql.Data.dll

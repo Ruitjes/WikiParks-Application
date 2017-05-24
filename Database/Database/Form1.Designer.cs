@@ -114,9 +114,9 @@
             // dataGridView_USERS
             // 
             this.dataGridView_USERS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_USERS.Location = new System.Drawing.Point(310, 25);
+            this.dataGridView_USERS.Location = new System.Drawing.Point(322, 44);
             this.dataGridView_USERS.Name = "dataGridView_USERS";
-            this.dataGridView_USERS.Size = new System.Drawing.Size(947, 423);
+            this.dataGridView_USERS.Size = new System.Drawing.Size(947, 482);
             this.dataGridView_USERS.TabIndex = 0;
             this.dataGridView_USERS.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView_USERS_MouseClick);
             // 
