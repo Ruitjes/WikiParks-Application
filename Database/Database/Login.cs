@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using DevOne.Security.Cryptography.BCrypt;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,35 +21,45 @@ namespace Database
 
         MySqlConnection connection = new MySqlConnection("datasource=sql11.freesqldatabase.com;port=3306;Initial Catalog='sql11174958';username=sql11174958;password=1QjPTHLY95");
 
-         MySqlDataAdapter myAdapter = new MySqlDataAdapter();
+        MySqlDataAdapter myAdapter = new MySqlDataAdapter();
 
         DataTable table = new DataTable();
 
         private void Login_Load(object sender, EventArgs e)
         {
+            connection.Open();
             txbPassword.UseSystemPasswordChar = true;
+
+           // using (MySqlCommand command = new MySqlCommand("INSERT INTO `Login` (`Username`, `Password`) VALUES ('admin', '" + BCryptHelper.HashPassword("admin123", BCryptHelper.GenerateSalt()) + "');", connection))
+           // {
+           //     command.ExecuteNonQuery();
+           // }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            myAdapter = new MySqlDataAdapter("SELECT `Username`, `Password` FROM `Login` WHERE `username` = '" + txbUsername.Text + "' AND `password` = '" + txbPassword.Text + "'", connection);
-            myAdapter.Fill(table);
-
-            if (table.Rows.Count <=0)
+            using (MySqlCommand command = new MySqlCommand("SELECT `Username`, `Password` FROM `Login` WHERE `Username` = '" + txbUsername.Text + "';", connection))
             {
-                label3.ForeColor = Color.Red;
-                label3.Text = "Username Or Password are Invalid";
-            }
-            else
-            {
-                label3.ForeColor = Color.Green;
-                label3.Text = "Username and Password are valid!";
+                using(MySqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        if (BCryptHelper.CheckPassword(txbPassword.Text, reader.GetString("Password")))
+                        {
+                            label3.Text = "Username and Password are valid!";
+                            label3.ForeColor = Color.Green;
 
-                this.Hide();
-                Form1 f = new Form1();
-                f.Show();
-               
-                
+                            this.Hide();
+                            Form1 f = new Form1();
+                            f.Show();
+                        }
+                    }
+                    else
+                    {
+                        label3.ForeColor = Color.Red;
+                        label3.Text = "Username Or Password are Invalid";
+                    }
+                }
             }
         }
 

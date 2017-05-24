@@ -22,3 +22,4 @@ C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Databas
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\Database.exe
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\Database.pdb
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\MySql.Data.dll
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\DevOne.Security.Cryptography.BCrypt.dll
