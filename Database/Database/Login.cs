@@ -19,7 +19,7 @@ namespace Database
             InitializeComponent();
         }
 
-        MySqlConnection connection = new MySqlConnection("datasource=sql11.freesqldatabase.com;port=3306;Initial Catalog='sql11174958';username=sql11174958;password=1QjPTHLY95");
+        MySqlConnection connection = new MySqlConnection("datasource=localhost;Initial Catalog='users';username=root;password=");
 
         MySqlDataAdapter myAdapter = new MySqlDataAdapter();
 
@@ -30,15 +30,15 @@ namespace Database
             connection.Open();
             txbPassword.UseSystemPasswordChar = true;
 
-           // using (MySqlCommand command = new MySqlCommand("INSERT INTO `Login` (`Username`, `Password`) VALUES ('admin', '" + BCryptHelper.HashPassword("admin123", BCryptHelper.GenerateSalt()) + "');", connection))
-           // {
-           //     command.ExecuteNonQuery();
-           // }
+            using (MySqlCommand command = new MySqlCommand("INSERT INTO `Login` (`Username`, `Password`) VALUES ('admin', '" + BCryptHelper.HashPassword("admin123", BCryptHelper.GenerateSalt()) + "');", connection))
+            {
+                command.ExecuteNonQuery();
+            }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            using (MySqlCommand command = new MySqlCommand("SELECT `Username`, `Password` FROM `Login` WHERE `Username` = '" + txbUsername.Text + "';", connection))
+            using(MySqlCommand command = new MySqlCommand("SELECT `Username`, `Password` FROM `Login` WHERE `Username` = '" + txbUsername.Text + "';", connection))
             {
                 using(MySqlDataReader reader = command.ExecuteReader())
                 {

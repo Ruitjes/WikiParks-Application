@@ -20,7 +20,7 @@ namespace Database
         }
 
        // MySqlConnection connection = new MySqlConnection("");
-        MySqlConnection connection = new MySqlConnection("datasource=sql11.freesqldatabase.com;port=3306;Initial Catalog='sql11174958';username=sql11174958;password=1QjPTHLY95");
+        MySqlConnection connection = new MySqlConnection("datasource=localhost;Initial Catalog='users';username=root;password=");
         MySqlCommand command;
 
         private void Form1_Load(object sender, EventArgs e)
