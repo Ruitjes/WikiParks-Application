@@ -48,10 +48,14 @@ namespace Database
                 txbParkNaam.Text = dataGridView_USERS.CurrentRow.Cells[1].Value.ToString();
                 txbLocatie.Text = dataGridView_USERS.CurrentRow.Cells[2].Value.ToString();
                 txbOpeningsDagen.Text = dataGridView_USERS.CurrentRow.Cells[3].Value.ToString();
-                txbPrijzen.Text = dataGridView_USERS.CurrentRow.Cells[4].Value.ToString();
-                txbLeeftijden.Text = dataGridView_USERS.CurrentRow.Cells[5].Value.ToString();
-                txbTags.Text = dataGridView_USERS.CurrentRow.Cells[6].Value.ToString();
-                rtbBeschrijving.Text = dataGridView_USERS.CurrentRow.Cells[7].Value.ToString();
+                txbParkLat.Text = dataGridView_USERS.CurrentRow.Cells[4].Value.ToString();
+                txbParkLon.Text = dataGridView_USERS.CurrentRow.Cells[5].Value.ToString();
+                txbPrijzen.Text = dataGridView_USERS.CurrentRow.Cells[6].Value.ToString();
+                txbLeeftijden.Text = dataGridView_USERS.CurrentRow.Cells[7].Value.ToString();
+                txbTags.Text = dataGridView_USERS.CurrentRow.Cells[8].Value.ToString();
+                txbParkWebsite.Text = dataGridView_USERS.CurrentRow.Cells[9].Value.ToString();
+                rtbKorteBeschrijving.Text = dataGridView_USERS.CurrentRow.Cells[10].Value.ToString();
+                rtbBeschrijving.Text = dataGridView_USERS.CurrentRow.Cells[11].Value.ToString();
             }
             catch
             {
@@ -105,14 +109,14 @@ namespace Database
 
         private void BTN_INSERT_Click(object sender, EventArgs e)
         {
-            string insertQuery = "INSERT INTO park(ParkNaam, ParkLocatie, ParkOpeningsDagen, ParkOpeningsTijden, ParkPrijzen, ParkLeeftijden, ParkTags, ParkBeschrijving) VALUES('" +txbParkNaam.Text+ "','" +txbLocatie.Text+ "','" +txbOpeningsDagen.Text + "','" +txbOpeningsTijden.Text+ "','" +txbPrijzen.Text+ "','" +txbLeeftijden.Text+ "','" +txbTags.Text+ "','" +rtbBeschrijving.Text+ "')";
+            string insertQuery = "INSERT INTO park(ParkNaam, ParkLocatie, ParkLat, ParkLon, ParkOpeningsDagen, ParkOpeningsTijden, ParkPrijzen, ParkLeeftijden, ParkWebsite, ParkTags, ParkKorteBeschrijving, ParkVolleBeschrijving) VALUES('" +txbParkNaam.Text+ "','" +txbLocatie.Text+ "','" +txbParkLat.Text+ "','" + txbParkLon.Text + "','"+txbOpeningsDagen.Text + "','" +txbOpeningsTijden.Text+ "','" +txbPrijzen.Text+ "','" +txbLeeftijden.Text+ "','" + txbParkWebsite.Text + "','" + txbTags.Text + "','" +rtbKorteBeschrijving.Text+ "','" +rtbBeschrijving.Text+ "')";
             executeMyQuery(insertQuery);
             populateDGV();
         }
 
         private void BTN_UPDATE_Click(object sender, EventArgs e)
         {
-            string updateQuery = "UPDATE park SET ParkNaam='" +txbParkNaam.Text+ "',ParkLocatie='" +txbLocatie.Text+ "',ParkOpeningsDagen='" +txbOpeningsDagen.Text+ "',ParkOpeningsTijden='" +txbOpeningsTijden.Text+ "',ParkPrijzen='" +txbPrijzen.Text+ "',Parkleeftijden='" +txbLeeftijden.Text+ "',ParkTags='" +txbTags.Text+ "',ParkBeschrijving='" +rtbBeschrijving.Text+ "' WHERE ParkID =" + int.Parse(txbParkID.Text);
+            string updateQuery = "UPDATE park SET ParkNaam='" + txbParkNaam.Text + "',ParkLocatie='" + txbLocatie.Text + "',ParkLat='" + txbParkLat.Text + "',ParkLon='" + txbParkLon.Text + "',ParkOpeningsDagen='" + txbOpeningsDagen.Text + "',ParkOpeningsTijden='" + txbOpeningsTijden.Text + "',ParkPrijzen='" + txbPrijzen.Text + "',Parkleeftijden='" + txbLeeftijden.Text + "',ParkWebsite='" + ParkWebsite.Text + "',ParkTags='" + txbTags.Text + "',ParkKorteBeschrijving='" + rtbKorteBeschrijving.Text + "',ParkVolleBeschrijving='" + rtbBeschrijving.Text + "' WHERE ParkID =" + int.Parse(txbParkID.Text);
             executeMyQuery(updateQuery);
             populateDGV();
         }
