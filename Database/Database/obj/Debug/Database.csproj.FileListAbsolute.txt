@@ -15,7 +15,6 @@ C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\Databas
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.exe
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.pdb
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.csprojResolveAssemblyReference.cache
-C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.Form1.resources
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.Login.resources
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.Properties.Resources.resources
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.csproj.GenerateResource.Cache
@@ -23,3 +22,4 @@ C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\Databas
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\Database.pdb
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\MySql.Data.dll
 C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\bin\Debug\DevOne.Security.Cryptography.BCrypt.dll
+C:\Users\stanr\Desktop\Wikiparks-Application\Database\Database\obj\Debug\Database.WikiParks.resources

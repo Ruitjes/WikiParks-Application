@@ -1,6 +1,6 @@
 ﻿namespace Database
 {
-    partial class Form1
+    partial class WikiParks
     {
         /// <summary>
         /// Required designer variable.
@@ -58,6 +58,12 @@
             this.ParkWebsite = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.rtbKorteBeschrijving = new System.Windows.Forms.RichTextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txbParkProvincie = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txbParkNavigatiePrijzen = new System.Windows.Forms.TextBox();
+            this.txbParkImage = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_USERS)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,28 +76,28 @@
             // 
             // txbParkNaam
             // 
-            this.txbParkNaam.Location = new System.Drawing.Point(72, 74);
+            this.txbParkNaam.Location = new System.Drawing.Point(71, 97);
             this.txbParkNaam.Name = "txbParkNaam";
             this.txbParkNaam.Size = new System.Drawing.Size(232, 20);
             this.txbParkNaam.TabIndex = 1;
             // 
             // txbLocatie
             // 
-            this.txbLocatie.Location = new System.Drawing.Point(82, 100);
+            this.txbLocatie.Location = new System.Drawing.Point(81, 123);
             this.txbLocatie.Name = "txbLocatie";
             this.txbLocatie.Size = new System.Drawing.Size(222, 20);
             this.txbLocatie.TabIndex = 2;
             // 
             // txbOpeningsDagen
             // 
-            this.txbOpeningsDagen.Location = new System.Drawing.Point(124, 176);
+            this.txbOpeningsDagen.Location = new System.Drawing.Point(124, 240);
             this.txbOpeningsDagen.Name = "txbOpeningsDagen";
             this.txbOpeningsDagen.Size = new System.Drawing.Size(180, 20);
             this.txbOpeningsDagen.TabIndex = 3;
             // 
             // BTN_INSERT
             // 
-            this.BTN_INSERT.Location = new System.Drawing.Point(11, 606);
+            this.BTN_INSERT.Location = new System.Drawing.Point(7, 692);
             this.BTN_INSERT.Name = "BTN_INSERT";
             this.BTN_INSERT.Size = new System.Drawing.Size(75, 23);
             this.BTN_INSERT.TabIndex = 9;
@@ -101,7 +107,7 @@
             // 
             // BTN_UPDATE
             // 
-            this.BTN_UPDATE.Location = new System.Drawing.Point(123, 606);
+            this.BTN_UPDATE.Location = new System.Drawing.Point(119, 692);
             this.BTN_UPDATE.Name = "BTN_UPDATE";
             this.BTN_UPDATE.Size = new System.Drawing.Size(75, 23);
             this.BTN_UPDATE.TabIndex = 10;
@@ -111,7 +117,7 @@
             // 
             // BTN_DELETE
             // 
-            this.BTN_DELETE.Location = new System.Drawing.Point(228, 606);
+            this.BTN_DELETE.Location = new System.Drawing.Point(224, 692);
             this.BTN_DELETE.Name = "BTN_DELETE";
             this.BTN_DELETE.Size = new System.Drawing.Size(75, 23);
             this.BTN_DELETE.TabIndex = 11;
@@ -140,7 +146,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 77);
+            this.label2.Location = new System.Drawing.Point(11, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 3;
@@ -149,7 +155,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 103);
+            this.label3.Location = new System.Drawing.Point(11, 126);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 3;
@@ -158,7 +164,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 179);
+            this.label4.Location = new System.Drawing.Point(12, 243);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 13);
             this.label4.TabIndex = 3;
@@ -167,7 +173,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(12, 233);
+            this.label11.Location = new System.Drawing.Point(12, 297);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(60, 13);
             this.label11.TabIndex = 4;
@@ -176,7 +182,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 258);
+            this.label1.Location = new System.Drawing.Point(10, 350);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 5;
@@ -185,7 +191,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 283);
+            this.label6.Location = new System.Drawing.Point(11, 375);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 13);
             this.label6.TabIndex = 6;
@@ -194,36 +200,36 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 405);
+            this.label7.Location = new System.Drawing.Point(8, 491);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 13);
+            this.label7.Size = new System.Drawing.Size(116, 13);
             this.label7.TabIndex = 7;
-            this.label7.Text = "ParkVolleBeschrijving";
+            this.label7.Text = "ParkLangeBeschrijving";
             // 
             // txbPrijzen
             // 
-            this.txbPrijzen.Location = new System.Drawing.Point(71, 230);
+            this.txbPrijzen.Location = new System.Drawing.Point(71, 294);
             this.txbPrijzen.Name = "txbPrijzen";
             this.txbPrijzen.Size = new System.Drawing.Size(232, 20);
             this.txbPrijzen.TabIndex = 5;
             // 
             // txbLeeftijden
             // 
-            this.txbLeeftijden.Location = new System.Drawing.Point(92, 255);
+            this.txbLeeftijden.Location = new System.Drawing.Point(91, 347);
             this.txbLeeftijden.Name = "txbLeeftijden";
             this.txbLeeftijden.Size = new System.Drawing.Size(211, 20);
             this.txbLeeftijden.TabIndex = 6;
             // 
             // txbTags
             // 
-            this.txbTags.Location = new System.Drawing.Point(71, 280);
+            this.txbTags.Location = new System.Drawing.Point(70, 372);
             this.txbTags.Name = "txbTags";
             this.txbTags.Size = new System.Drawing.Size(232, 20);
             this.txbTags.TabIndex = 7;
             // 
             // rtbBeschrijving
             // 
-            this.rtbBeschrijving.Location = new System.Drawing.Point(11, 421);
+            this.rtbBeschrijving.Location = new System.Drawing.Point(7, 507);
             this.rtbBeschrijving.Name = "rtbBeschrijving";
             this.rtbBeschrijving.Size = new System.Drawing.Size(292, 179);
             this.rtbBeschrijving.TabIndex = 8;
@@ -232,7 +238,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 209);
+            this.label5.Location = new System.Drawing.Point(13, 273);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 13);
             this.label5.TabIndex = 12;
@@ -240,7 +246,7 @@
             // 
             // txbOpeningsTijden
             // 
-            this.txbOpeningsTijden.Location = new System.Drawing.Point(124, 202);
+            this.txbOpeningsTijden.Location = new System.Drawing.Point(124, 266);
             this.txbOpeningsTijden.Name = "txbOpeningsTijden";
             this.txbOpeningsTijden.Size = new System.Drawing.Size(179, 20);
             this.txbOpeningsTijden.TabIndex = 4;
@@ -248,7 +254,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 127);
+            this.label8.Location = new System.Drawing.Point(12, 150);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 13;
@@ -257,7 +263,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 157);
+            this.label9.Location = new System.Drawing.Point(11, 181);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 13);
             this.label9.TabIndex = 14;
@@ -265,21 +271,21 @@
             // 
             // txbParkLat
             // 
-            this.txbParkLat.Location = new System.Drawing.Point(82, 127);
+            this.txbParkLat.Location = new System.Drawing.Point(83, 150);
             this.txbParkLat.Name = "txbParkLat";
             this.txbParkLat.Size = new System.Drawing.Size(221, 20);
             this.txbParkLat.TabIndex = 15;
             // 
             // txbParkLon
             // 
-            this.txbParkLon.Location = new System.Drawing.Point(82, 154);
+            this.txbParkLon.Location = new System.Drawing.Point(83, 178);
             this.txbParkLon.Name = "txbParkLon";
             this.txbParkLon.Size = new System.Drawing.Size(221, 20);
             this.txbParkLon.TabIndex = 16;
             // 
             // txbParkWebsite
             // 
-            this.txbParkWebsite.Location = new System.Drawing.Point(82, 310);
+            this.txbParkWebsite.Location = new System.Drawing.Point(82, 402);
             this.txbParkWebsite.Name = "txbParkWebsite";
             this.txbParkWebsite.Size = new System.Drawing.Size(221, 20);
             this.txbParkWebsite.TabIndex = 17;
@@ -287,7 +293,7 @@
             // ParkWebsite
             // 
             this.ParkWebsite.AutoSize = true;
-            this.ParkWebsite.Location = new System.Drawing.Point(11, 313);
+            this.ParkWebsite.Location = new System.Drawing.Point(10, 405);
             this.ParkWebsite.Name = "ParkWebsite";
             this.ParkWebsite.Size = new System.Drawing.Size(68, 13);
             this.ParkWebsite.TabIndex = 18;
@@ -296,7 +302,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 339);
+            this.label10.Location = new System.Drawing.Point(8, 425);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(111, 13);
             this.label10.TabIndex = 19;
@@ -304,23 +310,73 @@
             // 
             // rtbKorteBeschrijving
             // 
-            this.rtbKorteBeschrijving.Location = new System.Drawing.Point(16, 356);
+            this.rtbKorteBeschrijving.Location = new System.Drawing.Point(12, 442);
             this.rtbKorteBeschrijving.Name = "rtbKorteBeschrijving";
             this.rtbKorteBeschrijving.Size = new System.Drawing.Size(287, 46);
             this.rtbKorteBeschrijving.TabIndex = 20;
             this.rtbKorteBeschrijving.Text = "";
             // 
-            // Form1
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 211);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(73, 13);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "ParkProvincie";
+            // 
+            // txbParkProvincie
+            // 
+            this.txbParkProvincie.Location = new System.Drawing.Point(91, 208);
+            this.txbParkProvincie.Name = "txbParkProvincie";
+            this.txbParkProvincie.Size = new System.Drawing.Size(213, 20);
+            this.txbParkProvincie.TabIndex = 16;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(12, 323);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(105, 13);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "ParkNavigatiePrijzen";
+            // 
+            // txbParkNavigatiePrijzen
+            // 
+            this.txbParkNavigatiePrijzen.Location = new System.Drawing.Point(124, 320);
+            this.txbParkNavigatiePrijzen.Name = "txbParkNavigatiePrijzen";
+            this.txbParkNavigatiePrijzen.Size = new System.Drawing.Size(179, 20);
+            this.txbParkNavigatiePrijzen.TabIndex = 5;
+            // 
+            // txbParkImage
+            // 
+            this.txbParkImage.Location = new System.Drawing.Point(76, 70);
+            this.txbParkImage.Name = "txbParkImage";
+            this.txbParkImage.Size = new System.Drawing.Size(226, 20);
+            this.txbParkImage.TabIndex = 0;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 76);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(58, 13);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "ParkImage";
+            // 
+            // WikiParks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1290, 649);
+            this.ClientSize = new System.Drawing.Size(1290, 777);
             this.Controls.Add(this.rtbKorteBeschrijving);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.ParkWebsite);
             this.Controls.Add(this.txbParkWebsite);
+            this.Controls.Add(this.txbParkProvincie);
             this.Controls.Add(this.txbParkLon);
             this.Controls.Add(this.txbParkLat);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txbOpeningsTijden);
@@ -328,14 +384,17 @@
             this.Controls.Add(this.rtbBeschrijving);
             this.Controls.Add(this.txbTags);
             this.Controls.Add(this.txbLeeftijden);
+            this.Controls.Add(this.txbParkNavigatiePrijzen);
             this.Controls.Add(this.txbPrijzen);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.label);
             this.Controls.Add(this.dataGridView_USERS);
             this.Controls.Add(this.BTN_DELETE);
@@ -343,9 +402,10 @@
             this.Controls.Add(this.BTN_INSERT);
             this.Controls.Add(this.txbOpeningsDagen);
             this.Controls.Add(this.txbLocatie);
+            this.Controls.Add(this.txbParkImage);
             this.Controls.Add(this.txbParkNaam);
             this.Controls.Add(this.txbParkID);
-            this.Name = "Form1";
+            this.Name = "WikiParks";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_USERS)).EndInit();
@@ -386,6 +446,12 @@
         private System.Windows.Forms.Label ParkWebsite;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RichTextBox rtbKorteBeschrijving;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txbParkProvincie;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txbParkNavigatiePrijzen;
+        private System.Windows.Forms.TextBox txbParkImage;
+        private System.Windows.Forms.Label label14;
     }
 }
 

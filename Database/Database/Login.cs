@@ -50,7 +50,7 @@ namespace Database
                             label3.ForeColor = Color.Green;
 
                             this.Hide();
-                            Form1 f = new Form1();
+                            WikiParks f = new WikiParks();
                             f.Show();
                         }
                     }
